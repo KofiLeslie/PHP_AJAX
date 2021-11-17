@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+</head>
+<body>
+    
+    <table class="table table-bordered table-striped">
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Surname</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+        <a href="add_new_user.php">
+            <button class="btn btn-success my-3">Add New User</button>
+        </a>
+        <!-- When Data is empty  -->
+        <tr>
+            <td colspan='4' align="center">NO DATA EXISTS!!!</td>
+        </tr>
+
+        <!-- When Data exists -->
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-6">
+                        <button id='".$row['id']."'>Edit</button>
+                    </div>
+                    <div class="col-md-6">
+                        <button id='".$row['id']."' class="btn btn-danger">Delete</button>
+                    </div>
+                </div>
+            </div></td>
+        </tr>
+    </table>
+    
+</body>
+</html>
