@@ -41,7 +41,9 @@ while ($row = mysqli_fetch_array($res)) {
                 </a>
                 </div>
                 <div class='col-md-6'>
-                    <button id='".$row['id']."' class='btn btn-danger col-md-12'>Delete</button>
+                <a href='delete_user.php?id=".$row['id']."'>
+                    <button id='".$row['id']." delete' class='btn btn-danger col-md-12'>Delete</button>
+                </a>
                 </div>
             </div>
         </div></td>
